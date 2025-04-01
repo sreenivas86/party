@@ -36,3 +36,5 @@ Thumbs.db         # Windows
 # Ignore database files (if any)
 *.db
 *.sqlite
+
+.mvn
