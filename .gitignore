@@ -1,0 +1,38 @@
+# Ignore Maven target directories
+/target/
+
+
+
+# Ignore Eclipse project files
+.project
+.classpath
+.settings/
+
+
+
+# Ignore compiled Java files
+*.class
+
+# Ignore log files
+*.log
+
+# Ignore temporary files created by IDEs and editors
+*.swp
+*.swo
+*.bak
+*~
+*.orig
+
+# Ignore OS-specific files
+.DS_Store         # macOS
+Thumbs.db         # Windows
+
+# Ignore local Maven repository
+/.m2/
+
+# Ignore application server deployment folders (e.g., Tomcat, JBoss, etc.)
+/webapps/
+
+# Ignore database files (if any)
+*.db
+*.sqlite
