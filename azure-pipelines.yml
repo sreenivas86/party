@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ado
+  name: ado
 
 steps:
 - task: Maven@4
