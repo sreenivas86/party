@@ -31,3 +31,12 @@ steps:
     ArtifactName: 'warfile'
     publishLocation: 'Container'
     MaxArtifactSize: 1
+- task: AzureRmWebAppDeployment@5
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Azure subscription 1(1)(51a3f970-2e61-4b26-a3b7-d34461bc4532)'
+    appType: 'webAppLinux'
+    WebAppName: 'party'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.war'
+    RuntimeStack: 'JAVA|17-java17'
+    DeploymentTypeLinux: 'oneDeploy'
